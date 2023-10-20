@@ -52,12 +52,12 @@ const App = () => {
     })
   };
   const handleFinish = (value: any) => {
-    setValues((prevValues) => prevValues !== null ? [...prevValues, {
+    setValues((prevValues) => [...(prevValues || []), {
       id: uuidv4(),
       title: value.title,
       content: value.content,
       checked: false,
-    }] : null)
+    }])
   };
 
   useEffect(() => {

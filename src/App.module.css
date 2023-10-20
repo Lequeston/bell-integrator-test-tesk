@@ -1,0 +1,12 @@
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  color: white;
+}
+
+.list {
+  min-height: 100%;
+}
+
